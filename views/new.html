@@ -57,7 +57,8 @@
                     <div class="input-group">
                       <span class="input-group-btn">
                         <span class="btn btn-primary btn-file">
-                          Add a cover image <input type="url" id="avatar" name="avatar" required />
+                          Add a cover image 
+                          <input type="url" id="avatar" name="avatar" placeholder="Put URL image for the cover here..." required />
                         </span>
                       </span>
                     </div>
@@ -82,7 +83,7 @@
                       class="form-control"
                       id="symbols"
                       name="symbols"
-                      placeholder="Put hashtags for share..."
+                      placeholder="Put words of hashtags for share..."
                       required 
                     />
                   </div>
@@ -98,14 +99,12 @@
                 </nav>
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="content"
-                      name="content"
-                      placeholder="Put the content to explain it the topic..."
-                      required
-                    />
+                    <textarea
+                    class="form-control bcontent"
+                    id="content"
+                    name="content"
+                    placeholder="Write your post content here..."
+                    required></textarea>
                   </div>
                 </div>
                 <div class="col-sm-12">
@@ -139,7 +138,7 @@
                       class="form-control"
                       id="imagecontent"
                       name="imagecontent"
-                      placeholder="Put images of the content..."
+                      placeholder="Put URL image of the content..."
                       required 
                     />
                   </div>
