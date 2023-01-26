@@ -53,6 +53,10 @@ const drawPreview = (data) =>{
     articlePost.appendChild(headerArticle);
     const divHeader = document.createElement('div');
     headerArticle.appendChild(divHeader);
+    const imgTitle = document.createElement('img');
+    imgTitle.styleList = 'height: 100%; width: 100%; object-fit: contain;';
+    imgTitle.src= data.avatar;
+    divHeader.appendChild(imgTitle);
     const h1Div = document.createElement('h1');
     h1Div.textContent = data.title;
     divHeader.appendChild(h1Div);
@@ -64,9 +68,27 @@ const drawPreview = (data) =>{
     const divArticle = document.createElement('div');
     articlePost.appendChild(divArticle);
     const pName = document.createElement('p');
-    pName.textContent = data.name;
+    pName.textContent = data.author;
     divArticle.appendChild(pName);
-    
+    const pContent = document.createElement('p');
+    pContent.textContent = data.content;
+    divArticle.appendChild(pContent);
+    const pComments = document.createElement('p');
+    pComments.textContent = data.comments;
+    divArticle.appendChild(pComments);
+    const pDate = document.createElement('p');
+    pDate.textContent = data.date;
+    divArticle.appendChild(pDate);
+    const imgContent = document.createElement('img');
+    imgContent.styleList = 'height: 100%; width: 100%; object-fit: contain;';
+    imgContent.src= data.imagecontent;
+    divArticle.appendChild(imgContent);
+    const pReactions = document.createElement('p');
+    pReactions.textContent = data.reactions;
+    divArticle.appendChild(pReactions);
+    const pTimeRead = document.createElement('p');
+    pTimeRead.textContent = data.timeread;
+    divArticle.appendChild(pTimeRead);
 };
 
 const clearForm = () =>{
@@ -93,5 +115,21 @@ const clearPreview = () =>{
     alert('clearPreview');
 };
 
+const closeButton = () =>{
+    const formPreview = document.querySelector('#btnClose');
+    formPreview.addEventListener('click',() => {
+        confirmClose();
+    });
+};
+
+const confirmClose = () =>{
+    if (confirm('¿Estás seguro que deseas cerrar el formulario?')) {
+        window.location.href = `../index.html`;
+    }else{
+        alert('No se cerrará el formulario');
+    }
+};
+
 previewButton();
 editButton();
+closeButton();
