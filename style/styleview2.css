@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 48px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 16px;
+  margin-top: 56px;
+}
+
+#principal {
+  background-color: white;
+}
+#principal .profile {
+  border-radius: 50px;
+}
+#principal .gral__icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#principal .gral__icons a {
+  margin: 10px;
+}
+
+#main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#post-container {
+  width: 20%;
+}
+
+#main__section {
+  width: 60%;
+}
+
+.section__aside {
+  width: 20%;
+}
+
+#aside__menu {
+  width: 20%;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+#main-nav-link {
+  font-weight: bold;
+  color: #000000;
+}
+
+#main-nav-link:hover {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #3B49DF;
+}
+
+#main-nav-link-2 {
+  color: #000000;
+}
+
+#main-nav-link-2:hover {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #3B49DF;
+}
+
+#title-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+#title-link:hover {
+  color: #3B49DF;
+}
+
+#hashtag-link {
+  padding: 5px;
+  border: rgba(0, 0, 0, 0) solid 1px;
+  font-size: 14px;
+}
+
+#hashtag-link:hover {
+  background-color: #F3F3F3;
+  border: #e0e0e0 solid 1px;
+  border-radius: 5px;
+}
+
+#interaction-link {
+  padding: 10px;
+  font-size: 14px;
+}
+
+#interaction-link:hover {
+  background-color: #F3F3F3;
+  border-radius: 5px;
+}
+
+small {
+  font-size: 12px;
+}
+
+#bookmark-link:hover {
+  background-color: #EBECFC;
+  color: #2F3AB1;
+}
+
+#article__main {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  #aside__fixed {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .section__aside {
+    display: none;
+  }
+  #main__section {
+    width: 70%;
+  }
+} /*# sourceMappingURL=style.css.map */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+/* this is only due to codepen display don't use this outside of codepen */
+.container {
+  padding-top: 20px;
+}
+
+#maincontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+#maincontainer div {
+  margin-bottom: 30px;
+}
+
+#form-card {
+  height: 600px;
+  width: 600px;
+}
+
+#text-card {
+  width: 20%;
+  margin-left: 1.5em;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: start;
+}
+#toolbar a {
+  margin-right: 2rem;
+}/*# sourceMappingURL=styleview2.css.map */
