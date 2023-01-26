@@ -26,10 +26,10 @@
               <h3>Create Post</h3>
             </div>
           </nav>
-          <nav class="" aria-label="View post modes">
+          <nav class="d-flex" aria-label="View post modes">
             <ul>
               <li>
-                <button data-text="Edit" class="" type="button" aria-current="page">Edit</button>
+                <button data-text="Edit" class="" id="btnEdit" type="button" aria-current="page">Edit</button>
               </li>
               <li>
                 <button data-text="Preview" class="" id="btnPreview" type="button">Preview</button>
@@ -52,7 +52,7 @@
           <div class="row">
             <div class="col-md-12">
               <form id="formPostNew">
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <div class="input-group">
                       <span class="input-group-btn">
@@ -64,7 +64,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -76,7 +76,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -88,16 +88,20 @@
                     />
                   </div>
                 </div>
-                <nav class="navbar bg-light" id="navbar-toolbar">
-                  <div class="container-fluid" id="toolbar">
-                    <a class="navbar-brand" href="#">B</a>
-                    <a class="navbar-brand" href="#">I</a>  
-                    <a class="navbar-brand" href="#">🔗</a>  
-                    <a class="navbar-brand" href="#">⩸</a>  
-                    <a class="navbar-brand" href="#">⩨</a>                        
+                <div class="col-sm-12 formPost">
+                  <div class="form-group">
+                    <nav class="navbar bg-light" id="navbar-toolbar">
+                      <div class="container-fluid" id="toolbar">
+                        <a class="navbar-brand" href="#">B</a>
+                        <a class="navbar-brand" href="#">I</a>  
+                        <a class="navbar-brand" href="#">🔗</a>  
+                        <a class="navbar-brand" href="#">⩸</a>  
+                        <a class="navbar-brand" href="#">⩨</a>                        
+                      </div>
+                    </nav>
                   </div>
-                </nav>
-                <div class="col-sm-12">
+                </div>
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <textarea
                     class="form-control bcontent"
@@ -107,7 +111,7 @@
                     required></textarea>
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -119,7 +123,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -131,7 +135,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="url"
@@ -143,19 +147,19 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
                       class="form-control"
                       id="author"
                       name="author"
-                      placeholder="Put a date to publish..."
+                      placeholder="Put the name of the author..."
                       required 
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -167,7 +171,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="text"
@@ -179,7 +183,7 @@
                     />
                   </div>
                 </div>
-                <div class="col-sm-12">
+                <div class="col-sm-12 formPost">
                   <div class="form-group">
                     <input
                       type="submit"
