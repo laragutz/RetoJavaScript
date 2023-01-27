@@ -36,8 +36,6 @@
     background-color: rgb(215, 209, 240);
     padding: 3px;
     border-radius: 5px;
-    -webkit-text-decoration: underline solid blue;
-            text-decoration: underline solid blue;
   }
   #aside__menu .aside__icons__all {
     width: 230px;
